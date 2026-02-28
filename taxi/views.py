@@ -7,7 +7,7 @@ from taxi.models import Car, Driver, Manufacturer
 
 def index(request: HttpRequest) -> HttpResponse:
     """View function for the home page of the site."""
-    
+
     context = {
         "num_drivers": Driver.objects.count(),
         "num_cars": Car.objects.count(),
